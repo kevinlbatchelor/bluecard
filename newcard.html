@@ -1,0 +1,19 @@
+<div class="container">
+    <form name="card" class="box">
+        <h2 class="heading">New Card</h2>
+        <input type="text" id="name" name="name" class="input-block-level" placeholder="Feature" ng-model="cardname">
+        <textarea class="input-block-level" rows="10" id=description type="text" placeholder="Description"
+                  name="description" ng-model="carddescription"></textarea>
+        <input type="submit" class="btn btn-primary" ng-click="clickMe()"/>
+    </form>
+    <div class="box" ng-show="data.name">
+    <div class="alert-success">
+
+        {{data.name}} has been added.
+    </div>
+    </div> <div class="box" ng-show="data.error">
+    <div class="warning">
+        {{data.error}}
+    </div>
+    </div>
+</div>

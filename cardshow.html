@@ -1,0 +1,16 @@
+<div class='box'>
+    <div ng-repeat="post in posts">
+        <div class='box'>
+                <strong>{{post.name}}</strong><br>
+                {{post.description}}
+                {{post.error}}
+
+                <div style='text-align:right' ng-show="true">
+                    <br><br>
+                    <rating value="post.votes" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                </div>
+             <br>
+            <input type="submit" value="vote for this card" class="btn-link pull-right" ng-click="clickMe(post)"/>
+        </div>
+    </div>
+</div>

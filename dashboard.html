@@ -1,0 +1,27 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Blue Card</a>
+
+            <div class="nav-collapse collapse">
+            </div>
+            <ul class="nav">
+                <li class="active"><a href="#/dashboard">Home</a></li>
+                <li class="active" ng-show="data.Session.createcard==1"><a href="#/newcard">New Card</a></li>
+                <li class="active"  ng-show="data.Session.loadcards==1"><a href="#/cardlist">Card List</a></li>
+                <li class="active" ng-show="data.Session.voteforcard==1"><a href="#/cardshow">My Cards</a></li>
+                <li class="active"><a href="#/login">Log In</a></li>
+                <li ng-include src="'logout.html'"></li>
+                <li><a href="mailto:kevinbatchelor@gmail.com?Subject=Blue%20Card%20Comment" target="_top">Contact</a>
+                </li>
+                <li><a href="#/admin">Admin</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
